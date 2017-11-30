@@ -42,7 +42,7 @@
                         </ImageView>
                         <Button fx:id="leftImageButton" layoutX="100.0" layoutY="289.0" mnemonicParsing="false" text="Load Image" />
                         <Button fx:id="rightImageButton" layoutX="423.0" layoutY="289.0" mnemonicParsing="false" text="Load Image" />
-                        <Button layoutX="268.0" layoutY="301.0" mnemonicParsing="false" text="Compare" />
+                        <Button fx:id="compareImagesButton" layoutX="268.0" layoutY="301.0" mnemonicParsing="false" text="Compare" />
                      </children></AnchorPane>
             </content>
           </Tab>
