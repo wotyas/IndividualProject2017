@@ -21,7 +21,16 @@ public class ImagesComparator {
                 int max = RGBleft[i][j] > RGBright[i][j] ? RGBleft[i][j] : RGBright[i][j];
                 max = max == 0 ? 1 : max;
                 double diff = (double) tmp/max;
-                result += (1 - diff);
+                double res = 1 - diff;
+                if( res > 0.5 ){
+                    res *= 1.1;
+                } else {
+                    res *= 0.9;
+                }
+                if( res > 1 ){
+                    res = 1;
+                }
+                result += res;
             }
         }
         result /= 7.680;
